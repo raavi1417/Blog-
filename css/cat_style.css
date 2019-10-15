@@ -1,0 +1,115 @@
+body{
+background-color: whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.logo{
+    width: 100%;
+    height: 250px;
+}
+.container{
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+    
+}
+.container h2{
+    font-family: Arial;
+    padding-left: 20px;
+}
+.container p{
+    font-family: Arial;
+    padding-left: 20px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.head{
+    width: 100%;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: black;    
+}
+.head h2{
+    font-size: 40px;
+    text-align: left;
+    margin-top: 40px;
+    padding-left: 40px;
+    text-decoration: none;
+}
+.form-inline{
+    padding-left: 40px;
+    padding-top: 30px;
+    
+}
+ {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: mediumpurple;
+    color: white;
+    padding: 12px 20px;
+    border: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: dimgrey;
+}
+
+.container_form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        float: right;
+        
+    }
+}
